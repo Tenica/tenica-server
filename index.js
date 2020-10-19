@@ -5,15 +5,15 @@ require('dotenv').config({path: path.resolve(__dirname, './prod.env')})
 require('./db/mongoose')
 const userRouter = require('./routers/user')
 
-//const publicPath = path.join(__dirname, '..', 'public')
+
 
 
 const app = express()
-const port = process.env.PORT 
+const port = process.env.PORT || 3001
 
 
 
-//app.use(express.static(publicPath))
+
 app.use(express.json())
 app.use(userRouter)
 
