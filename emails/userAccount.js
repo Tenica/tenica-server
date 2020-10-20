@@ -14,7 +14,7 @@ const TrailBlazersUser = (email, name) => {
         console.log('Message sent')
     }).catch((error) => {
         console.log(error.response.body)
-        // console.log(error.response.body.errors[0].message)
+        
     })
 }
 ;  
